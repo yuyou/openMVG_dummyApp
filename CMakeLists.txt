@@ -21,6 +21,13 @@ include_directories(${EIGEN3_INCLUDE_DIRS})
 #ENDIF()
 #INCLUDE_DIRECTORIES ( "${EIGEN3_INCLUDE_DIR}" )
 
+find_package( OpenCV 3.0 REQUIRED )
+#  if (NOT OpenCV_FOUND)
+#    message(STATUS "OpenCV was not found. Disabling OpenCV support.")
+#  endif (NOT OpenCV_FOUND)
+
+
+
 #Bring the headers, such as Student.h into the project
 include_directories(include)
  
